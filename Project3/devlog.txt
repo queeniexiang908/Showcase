@@ -1,0 +1,130 @@
+WaffledOctopie
+Queenie Xiang
+Terry Guan
+Fabiola Rasdosav
+APCS2 PD3
+=========================================
+
+*Antikythera Development Log*
+
+
+2017-05-18
+—————————————————————————————————————————
+Queenie:
+1. Created and wrote the Enemy class file
+2. After a heated argument, decided to go alone with Terry’s idea of using (rcos(theta), rsin(theta)) polar coordinates for the movement of one type of enemy and the player instead of the fraction equation.
+3. Figured out how to translate images and objects created to the center of the screen
+4. Added a moving enemy
+
+Terry:
+1. Created and wrote the Character
+2. Wrote subclass Player
+3. Decided with Queenie to use polar coordinates of (rcos(theta), rsin(theta)) to represent movements of one type of enemy and the player
+
+
+2017-05-19
+—————————————————————————————————————————
+
+
+
+2017-05-20
+—————————————————————————————————————————
+Terry:
+1. Updated plan
+2. Added colors and enemies
+3. Updated the enemy class to be encircling the path
+4. Made keyPressed method so that whenever player hits space bar player
+changes sides
+
+2017-05-21
+—————————————————————————————————————————
+
+
+2017-05-22
+—————————————————————————————————————————
+Terry:
+1. Worked in class to flesh out and clarify the proposal
+
+Queenie:
+1. Updated proposal with more specific details and cleared up the vague sections
+2. Created and updated plan 2017-05-23
+
+Fabiola:
+1. Linked submodule
+2. Worked in class to flesh out and clarify the proposal
+
+
+2017-05-24
+—————————————————————————————————————————
+Terry:
+1. Robustified Queenie’s code of placing a stationary enemy
+2. Allowed for the stationary enemy to be positioned anywhere on/in the circle
+
+Queenie:
+1. Added a stationary enemy that has a 50% chance of being spawned on the outer edge of the circle, and 50% chance of being spawned on the inner edge.
+2. Originally created the code that only allowed the enemy to be stationed at one of the 0, 90, 180, and 270 positions.
+
+
+2017-05-25
+—————————————————————————————————————————
+Terry:
+1. Added player and enemy detection —- but works only for the stationary enemies so far.
+2. Altered the direction of the moving enemy so that it circles the opposite direction of the Player’s movement.
+3. Added PriorityQueue class. Copied from hw and then modified
+4. Added detection for ALL enemies
+5. Added methods isDead(), drawEnemy(), and addEnemy()
+
+Queenie:
+1. Added a new type of enemy that moves diagonally from one corner of the screen to the other.
+2. Added implementation for a LLStack by using the Stack interface and the code that we derived from classwork and homework.
+3. Created Upgrades class that will store various features of upgrade items such as cost, item name, duration of item, and description of item.
+4. Created 2 different types of upgrades: slow-down and double-points. Slow-down will slow down the frame rate of all characters, thus slowing down movement of all players, for a duration of 10 seconds. Doubling the points will double the amount of a points per second that a player can receive for a duration of 10 seconds.
+5. Implemented a compareTo method for comparing the priorities of enemies.
+
+Fabiola:
+1. Updated readme
+
+2017-06-01
+__________________________________________
+Fabiola:
+1. Created method drawUpgradeMenu() aka pause menu.
+
+
+2017-06-02
+__________________________________________
+Fabiola:
+1. Worked on implementing pause menu in driver file.
+
+Terry:
+1. Worked on implementing pause menu in driver file.
+
+2017-06-04
+—————————————————————————————————————————
+Terry:
+1. Added previewing of enemies
+2. Added enemy death after a certain amount of time
+3. adjusted the game for fullscreen
+
+Fabiola:
+1. Modified pause menu to new size
+
+2017-06-05
+_________________________________________
+Fabiola:
+1. Updated devlog and readme
+2. Worked on new methods drawIntroMenu() and drawInstructions() to make gameplay more clear and organized
+
+2017-06-06
+_________________________________________
+Queenie:
+1. Added upgrades DoublePoints and Slow Down time classes
+2. wrote upgrades abstract class
+3. wrote upgrades methods for drawing and using each upgrade
+
+Terry:
+1. Improved double points and slow down classes
+2. Wrote class for immunity upgrade
+3. Simplified code to switch statements
+4. Improved game displayed instructions
+5. Wrote method that would display the next upgrade available
+6. updated UML and flow diagram

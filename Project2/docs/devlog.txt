@@ -1,0 +1,148 @@
+﻿DamnCthatQT
+PM Donia Tung, Carol Pan, Taylor Wong, Queenie Xiang
+SoftDev1 pd7
+P# Fin
+
+
+/////////// Zone of Reflection \\\\\\\\\\\
+------------------------------------------
+OBSTACLES OVERCOME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+UNRESOLVED ISSUES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+COOL STUFF LEARNED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+MID-DEVELOPMENT DESIGN CHANGES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LESSONS LEARNED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+||||||||||||||||||||||||||||||||||||||||||
+
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+
+ ______   ______   __   __   __       ______   _______
+/_____/\ /_____/\ /_/\ /_/\ /_/\     /_____/\ /______/\
+\:::_ \ \\::::_\/_\:\ \\ \ \\:\ \    \:::_ \ \\::::__\/__
+ \:\ \ \ \\:\/___/\\:\ \\ \ \\:\ \    \:\ \ \ \\:\ /____/\
+  \:\ \ \ \\::___\/_\:\_/.:\ \\:\ \____\:\ \ \ \\:\\_  _\/
+   \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \
+    \____/_/ \_____\/ \___/_(   \_____\/ \_____\/ \_____\/
+
+
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+
+
+
+doniaT — 2018-05-17 21:30
+things checked when deploying the flask app
+	changed the web server in the .conf file? yup
+	installed apache2? yup
+	installed libapache2-mod-wsgi? yup
+	sudo a2enmod wsgi? yup
+	sudo service apache2 restart? yup
+
+carolP — 2018-05-17 23:00
+pushed the link to the (non-functional :( ) droplet site
+
+carolP — 2018-05-18 13:16
+uploaded/created basic files
+account making and authenticating (needs to be tested)
+
+queenieX -- 2018-05-18 13:18
+Added zomato.py and zomato.html for restaurant search option
+
+tungD -- 2018-05-19
+PIP INSTALL FLASK!!! (and making the file executable!)
+proto0 is no longer problematic.
+
+queenieX -- 2018-05-22 13:15
+Modified zomato.py and added appropriate url routes for restuarant search option
+created zomato.html and zomato_results.html to display restaurant search / results data
+
+carolP -- 2018-05-22 13:22
+created files to be used for apis
+
+dtung -- 2018-05-22 18:05
+changed repo to be LAMP executable
+changed out proto0 for proto1, to be used for our site
+
+carolP -- 2018-05-23 12:59
+fixed __init__.py (lines went missing)
+modified database
+
+queenieX -- 2018-05-24 13:12
+fixed __init__.py
+added in missing zomato restaurant search and result routes
+created zomato.py and appropriate functions to access zomato api and grab restaurant information
+cleaned up some files (moved into the right folders, etc.)
+
+carolP -- 2018-05-24 13:18
+added more db fxns
+set up html pages for login and signup, not connected to flask
+
+carolP -- 2018-05-26 19:22
+prelim check shows accounts work
+modified db
+basic eventbrite stuff, urllib calls
+
+taylorW -- 2018-05-25 20:03
+created more substantial basic.html, and added various css template,
+site favicon, static images (for now?), and index.html for home page, basic necessary js files
+
+taylorW -- 2018-05-27 12:39
+edited more css, tried implementing sass, more edits to index.html
+and base.html to work across browsers
+
+taylorW -- 2018-05-27 13:22
+new functions for pages in __init__.py; added about page, about page, browse page;
+and small changes to other pages
+
+taylorW -- 2018-05-28 22:26
+jazzed up account page, added more css files (will probably get rid of some later),
+more minor changes to other pages
+
+taylorW -- 2018-05-29 10:13
+dummy data for presentation
+
+queenieX -- 2018-05-29 13:16
+Added in missing section for resturant_result in __init__.py
+Added in a section on for homepage to recognize signed in users / users that just signed out -- isn't completely working yet
+Worked on sign up page for users
+
+taylorW -- 2018-05-29 18:59
+made view details page with hardcoded data, added to about page, minor general edits
+
+taylorW -- 2018-05-29 19:52
+modified format of restaurant search pages
+
+queenieX -- 2018-05-31 20:21
+Added yelp.py, yelp.html and yelp_results.html, as well as the appropriate functions in __init__.py to acces the Yelp API and return requested data.
+
+queenieX -- 2018-06-01 15:27
+Added to yelp.results.html to filter out and show the appropriate data (looping works well now!) 
+Simplified yelp.html
+Added a picture to yelp_results.html but isn't formatted properly yet
+Rerouted search in the navbar to go to yelp search instead of zomato
+
+carolP -- 2018-06-04 13:12
+worked on db functions (not tested)
+
+doniaT -- 2018-06-04 13:19
+changed files to reflect appname switch to datebrite. should be ready for deployment on the stuycs server
+
+carolP -- 2018-06-06 13:07
+finished db functions (not tested!)
+
+queenieX -- 2018-06-06 21:55
+Added new searching criteria to search page (can search by price, more sorts, and not just restaurants now)
+Added new images to certain pages to make it more interesting
+Form on Sign Up page isn't centered yet
+
+carolP -- 2018-06-09 18:16
+finished testing all but additional functionality db fxns

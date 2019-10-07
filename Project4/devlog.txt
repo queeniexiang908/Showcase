@@ -1,0 +1,180 @@
+tbmagestic
+Eugene Thomas, Jawadul Kadir, Queenie Xiang, Jen Yu
+Project #2: e.g.
+_________ ______     _______  _______  _______  _______    _______ __________________ _______
+\__   __/(  ___ \   (       )(  ___  )(  ____ \(  ____ \  (  ____ \\__   __/\__   __/(  ____ \
+   ) (   | (   ) )  | () () || (   ) || (    \/| (    \/  | (    \/   ) (      ) (   | (    \/
+   | |   | (__/ /   | || || || (___) || |      | (__      | (_____    | |      | |   | |
+   | |   |  __ (    | |(_)| ||  ___  || | ____ |  __)     (_____  )   | |      | |   | |
+   | |   | (  \ \   | |   | || (   ) || | \_  )| (              ) |   | |      | |   | |
+   | |   | )___) )  | )   ( || )   ( || (___) || (____/\  /\____) |   | |   ___) (___| (____/\
+   )_(   |/ \___/   |/     \||/     \|(_______)(_______/  \_______)   )_(   \_______/(_______/
+
+
+			 ______   _______           _        _______  _______
+			(  __  \ (  ____ \|\     /|( \      (  ___  )(  ____ \
+			| (  \  )| (    \/| )   ( || (      | (   ) || (    \/
+			| |   ) || (__    | |   | || |      | |   | || |
+			| |   | ||  __)   ( (   ) )| |      | |   | || | ____
+			| |   ) || (       \ \_/ / | |      | |   | || | \_  )
+			| (__/  )| (____/\  \   /  | (____/\| (___) || (___) |
+			(______/ (_______/   \_/   (_______/(_______)(_______)
+
+jawadulK, queenieX, eugeneT, jenY -- 2017-12-15 13:00
+Brainstormed idea
+
+jawadulK, queenieX, eugeneT, jenY -- 2017-12-15 13:00
+Idea set on a fake profile generator for all fake profile needs
+
+jenY -- 2017-12-17 10:30
+Started script for pitch
+
+jenY -- 2017-12-17 11:00
+Worked on making demo page
+
+eugeneT -- 2017-12-17 22:11
+Worked on script for pitch
+
+eugeneT, jenY -- 2017-12-18 13:18
+Finished script for pitch
+
+jawadulK, queenieX -- 2017-12-18 13:18
+Fixed visual bugs in the demo page
+
+jawadulK, queenieX, jenY -- 2017-12-19 12:43
+Delivered pitch
+
+jawadulK, queenieX, eugeneT, jenY -- 2017-12-19 21:04
+Decided to switch idea
+New idea is finding deals nearby the user using the Groupon API
+
+jawadulK, queenieX, jenY -- 2017-12-20 13:18
+Worked on design doc
+
+queenieX, eugeneT, jenY -- 2017-12-21 13:18
+Worked on design doc
+
+jawadulK -- 2017-12-21 13:18
+Created Google Maps Embed API demo
+
+jawadulK, queenieX, eugeneT, jenY -- 2017-12-21 20:02
+Decided to switch idea
+New idea is finding events nearby the user using the Eventbrite API
+
+jenY -- 2017-12-21 21:08
+Worked on design doc
+
+jawadulK -- 2017-12-21 21:38
+File setup
+
+eugeneT -- 2017-12-22 00:35
+Worked on design doc
+
+jawadulK -- 2017-12-22 01:35
+Implemented basic version of idea for demonstration
+
+jawadulK -- 2017-12-22 02:00
+Worked on design doc
+
+eugeneT -- 2018-01-02 13:10
+Examined bootstrap and began to incorporate it (along with inheritance) in our html templates
+
+queenieX -- 2018-01-02 13:11
+Examined the inner workings of the APIs while working on some python and back end coding
+
+jenY -- 2018-01-04 13:00
+Added login and database scripts (commented out until database schema set up)
+Added gmap and eventbrite into utils folder
+  * functions retrieving data from APIs implemented here
+  * eventbrite returning list of events based on query
+Retrieved front-end from old projects (created by myself for HW #11)
+  * modified some of the front page
+Search functionality working, VERY basic
+  * only returns names of events, personalized event page not yet created
+  * looking to track user's location, no need for address
+
+jenY -- 2018-01-06 11:32
+Working with geolocation
+Added geo.html and geolocation.js files
+
+queenieX -- 2018-01-08 13:00
+Added advanced search button to the navbar found in every page (by inheriting base.html)
+Created advancedsearch() to app.py and a route /advancedsearch so the user will be directed here in case they want to get more specific results
+Advanced search includes searching by address, searching by query, and specifying radius
+Created advancedsearch.html
+Added to eventbrite.py to give back specific results for advanced search
+Created advancedresults() to app.py
+
+queenieX -- 2018-01-10 13:10
+Added to the advanced search page to inclue a heading, what are you looking for (query), near where (address), and within how many miles (radius)
+
+jawadulK -- 2018-1-17 01:18
+Updated README.md
+
+jenY -- 2018-01-18 01:00
+Trying to fix accuracy of search results
+Used Google Places API to get latitude and longitude of an address
+  * search of events takes in lat and lng
+  * Problem with irrelevant results persists
+
+jenY -- 2018-01-18 01:11
+README.md up to par
+
+jenY -- 2018-01-20 14:30
+Working on advanced search function
+Turns out Eventbrite just has a bad search function...
+Formatting in progress for Search Results
+
+jenY -- 2018-01-21 14:25
+Finished formatting advanced search results
+Results processed from json string before return
+Hidden values included in submit function
+
+jenY -- 2018-01-21 15:30
+Added eventpage for displaying an event
+Added path for event
+Testing out with retrieving all paramters from form at once
+
+queenieX -- 2018-01-22 10:45
+Added a synonym filtering system to refine the advanced search results [Removed due to enhancement of advanced search by Jawad below]
+
+jawadulK -- 2018-01-24 1:21
+Implemented geolocation into search and advanced search
+  Uses javascript geolocation functions
+Fixed results being random, now results based off query
+Added error for if no events are found
+
+queenieX -- 2018-01-24 5:10
+Added a user system with a data base -- stores user search history
+Added a login / logout system
+Added a user-info page
+Created video-demo
+Updated design.pdf
+
+thomasE -- 2018-01-10 13:17 to 2018-01-24 8:00
+Worked on the front end, ensuring that every single project looked as nice as possible.
+At times, I was tasked to also work on some back end issues, such as utilizing the APIs
+to this fullest abilities. Also, I was tasked to write multiple methods that made the overall
+experience of working with the sometimes difficult-to-work-with EventBrite API a little more
+user-friendly. These included timeConversion and dateConversion which took their international date
+and month formatting, changing it to a standard time formatting. Two issues that our group had
+were time management, and especially making sure that we didn't have a 100% understanding of the
+EventBrite API since it is very difficult to use at times. One issue that I had personally throughout
+was time management, but also the fact that I was not that optimal in understanding how to truly
+beautify the front end of the website, I usually don't do front end and this was a big step out of
+my comfort zone. Also, as you can see by the devlog entry, I had a complete mental lapse and I did
+not remember to fill in my devlog for the last couple of weeks. But overall what I did in the last two
+weeks was...
+1. Learn about the APIs we were working with. In the event that I would have to format the dictionaries,
+   or even write methods where I had to work with the APIs, that strong foundation in the APIs was important
+   to doing great things in this project.
+2. Did some research on front end programming, before this course, I had never worked with BootStrap or Foundation.
+   Thus this task and this project really was a step out of my comfort zone in finding things to understand about
+   BootStrap, in order to make the prettiest project possible.
+3. Began coding the front end. The hardest part of this was starting the project, I knew that it would be a struggle
+   for me to come up with a good design, so we tried multiple times, and scrapped it multiple times. Whether it was
+   going through Coolors to see the perfect color scheme, or moving buttons left and right and back again, these
+   seemingly-mundane traits of our project proved very important in having a pretty project overall.
+Once I continued coding the front end, this is where I started using knowledge from the API to work with the dictionaries,
+write some methods in app.py to make my and my back end group members' lives easier. Overall, this project was a
+learning experience, teaching me about front end programming, furthering my CS journey. 

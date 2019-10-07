@@ -1,0 +1,15 @@
+5/18/2017:
+
+1. Understand Processing!! //Done
+
+1.5 Make superclass Character  //Done
+
+2. Make Player class //Done
+
+3. Make movement of Player   //Done
+
+4. Make the circle //Done
+
+5. Make enemy class
+
+6. Make movement of Enemy //Done

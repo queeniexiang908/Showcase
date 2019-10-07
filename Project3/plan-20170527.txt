@@ -1,0 +1,4 @@
+1. Create priority queue //Done
+2. Update enemy movement to more easily manipulate the speed an enemy is moving at
+3. Make highscore //Done
+4. Print highscore at the end of the game //Done

@@ -1,0 +1,113 @@
+<style>
+  img {
+  width: 60%;
+  }
+</style>
+    
+  {% extends "base.html" %}
+
+{% block title %}
+Search
+{% endblock %}
+
+{% block content %}
+<br><br><br>
+
+<div class="container marketing">
+  <center>
+  <h1 id='dark'>Search</h1>
+</center>
+
+  <div class="row">
+      <div class="col">
+          <form action="/yelp_results" method="GET">
+            <center>
+              <h3 id='light'>What's on your mind today?</h3>
+	      <img src="./static/images/map.jpg">
+            </center>
+            <br><br>
+	    
+              <div class="form-group">
+                  <label for="term"> <b> What's on your mind today? </b> </label>
+                  <input type="text" class="form-control box-shadow" name="term" placeholder="Anything specific you're looking for..." autofocus>
+              </div>
+
+	      <br>
+	      
+              <div class="form-group">
+                  <div class="row">
+                      <div class="col-md-8">
+                          <label for="location"> <b> Near? </b> </label>
+                          <input type="text" class="form-control box-shadow" name="location" placeholder="New York City">
+			  <div class="form-check">
+			    <input type="checkbox" class="form-check-input" name="home" value="true"> <b> Use Home Zipcode </b> 
+			  </div>
+                      </div>
+                  </div>
+              </div>
+	      
+	       <br>
+	      
+              <div class="form-group">
+                  <label for="search_limit"> <b> How many results? </b> </label>
+                  <input type="text" class="form-control box-shadow" name="search_limit" placeholder="10">
+              </div>
+
+	      <br>
+	      
+              <div class="form-group">
+                <p> <b> Sort by? </b> </p>
+		 <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="sort" value="best_match"> Best Match
+                      </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="sort" value="rating"> Rating
+                      </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="sort" value="review_count"> Review Count
+                      </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="sort" value="distance"> Distance
+                      </label>
+                  </div>
+              </div>
+
+	      <br>
+	      
+	      <div class="form-group">
+		<p> <b> Price Range? </b> </p>
+		
+               <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="price" value="1"> $
+                      </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="price" value="2"> $$
+                      </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="price" value="3"> $$$
+                      </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="price" value="1,2,3"> No Preference
+                      </label>
+                  </div>
+              </div>
+              <button type="submit" class="btn btn-secondary" id='button2' >Submit</button>
+      </div>
+  </div>
+  </form>
+</div>
+{% endblock %}

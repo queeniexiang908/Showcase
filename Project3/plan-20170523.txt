@@ -1,0 +1,28 @@
+WaffledOctopie 
+Queenie Xiang
+Terry Guan 
+Fabiola Rasdosav
+APCS2 PD3
+
+
+Antikythera Plan 2017-05-23:
+
+1. Allow enemy to come in contact with player so that the player actually has to start dodging
+
+2. Decide on whether a heap (heap sort) or a priority queue (priority queue sort) will be used
+
+3. Implement a new stationary enemy that spawns somewhere on the circle but doesn't move throughout the entire game
+
+4. Use the chosen storage manner and implement it -- have it be able to store monsters
+
+5. Improve the game visually and decide graphic options (for example, have player be on the outer edge of the black, inner circle instead of being on the inside of the white edge of the circle).
+
+6. Decide how the timing between births of monsters will work and if the storage needs to start out empty (because if are, then you're adding a new monster every x seconds and pushing one out, this you would always have nothing in your queue) and if nevessary: how every x seconds, a new monster will be added but every y seconds, the monster with the highest priority will spawn. 
+
+7. Implement timers for the automatic spawning of monsters every x amount of seconds.
+
+8.  Have the timers and the storage manner (queue or heap) work together -- every x seconds, a new monster of a type will be added to storage and sorted according to priority. At the same time, a monster with the highest priority will exit the storage and be born. 
+
+
+
+
